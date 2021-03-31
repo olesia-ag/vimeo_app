@@ -6,10 +6,4 @@ import history from './history'
 
 import App from './app'
 
-ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
-
-  document.getElementById('app')
-)
+ReactDOM.render(<App />, document.getElementById('app'))

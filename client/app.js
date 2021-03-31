@@ -1,14 +1,11 @@
 import React from 'react'
-
-import {Navbar} from './components'
-import Routes from './routes'
+import FindVideo from './components/FindVideo/FindVideo'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
   return (
     <div>
-      {/* <Navbar />
-      <Routes /> */}
-      <p>Hello worl</p>
+      <FindVideo />
     </div>
   )
 }
