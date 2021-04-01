@@ -1,0 +1,21 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$theme-colors: (
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark
+  )
+);
+
+#app {
+  background-color: $gray-900;
+  color: $gray-200;
+  height: 100vh;
+  width: 100vw;
+}

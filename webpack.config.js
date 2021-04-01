@@ -1,4 +1,4 @@
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
@@ -44,7 +44,7 @@ module.exports = {
               postcssOptions: {
                 // postcss plugins, can be exported to postcss.config.js
                 plugins: function() {
-                  return [require('autoprefixer')]
+                  return [require('autoprefixer')];
                 }
               }
             }
@@ -54,7 +54,18 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader'
+        ]
       }
     ]
   }
-}
+};
